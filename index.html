@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="khoi"></div>
+            </div>
+            <div class="col-sm-6">
+                <div class="khoi"></div>
+            </div>
+                
+        </div>
+
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="alert alert-primary warning">cảnh báo</div>
+    </div>
+    <div class="container">
+
+        <div class="btn btn-success btn-center">ok</div>
+        <hr>
+        <div class="row">
+            <div class="col col-sm-6 btn btn-primary">la</div>
+
+        </div>
+        <hr>
+
+    </div>
+
+    <div class="alert alert-danger alert-demissing fade show" role="alert">
+        <strong>Holy guacamole!</strong>You should check in on some of those fields below.
+        <button class="btn-close" data-bs-dismiss="alert" aria-label="close" ></button>
+    </div>
+
+    <hr>
+    
+    <input class="btn btn-outline-primary" type="button" value="Reset">
+    <button type="reset" class="btn btn-outline-primary">Primary</button>
+    <hr>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+        <button class="btn btn-primary me-md-2" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+    </div>
+    <HR>
+    <div class="row">
+        <div class="d-grid gap-2 col-2 mx-auto">
+            <button class="btn btn-primary" type="button">Button</button>
+            <button class="btn btn-primary" type="button">Button</button>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-sm math-block">abc</div>
+        </div>
+    </div>
+    <hr>
+    <div class="btn-toolbar justify-content-md-between" role="toolbar">
+        <div class="btn-group ">
+            <button class="btn  btn-outline-info ">1</button>
+            <button class="btn btn-warning">2</button>
+            <button class="btn btn-danger">3</button>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-info active">4</button>
+            <button class="btn btn-info active">5</button>
+            <button class="btn btn-info">6</button>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-sm-6 card" >
+                <img style="width:430px; height: 100px;" class="card-img-top" src="https://png.pngtree.com/background/20210709/original/pngtree-beautiful-black-starry-background-material-picture-image_912056.jpg" alt="123">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                    <a href="#" class="btn btn-primary">ok</a>
+                </div>
+            </div>    
+        </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-3 ">
+                <div class="card" style="width:100%;">
+                    <img src="data:image/jpeg;base64,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" alt="hình ảnh" class="card-img-top" style="height: 400px; ;" >
+                    <div class="card-body">
+                        <h5 class="card-title"> Card title </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-3">
+                <div class="card">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxESEA8QDw0PDw8PDxENEA4PDw8PERAPFREXFhUXExUYHSggGBolGxYVITEhJSkrLi8uFx8zODM4NygtLisBCgoKDg0OFhAPFSslFR0tKy0rLS0tKy0rKy0rKzcrKy0rLS0rLSstLS0tNy03NysrKy0rKy0tKzctNy0yKystK//AABEIASwAqAMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQMEAgUGB//EADQQAAIBAgMGAggHAQEAAAAAAAABAgMRBCExBRJBUWFxgZEiMlKhscHR8AYTI0JicuGygv/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAcEQEBAQEAAgMAAAAAAAAAAAAAARECIUExUXH/2gAMAwEAAhEDEQA/APw0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE2IO4ipHiBwAAAAAAAAAAAAAAAAAAAAAAAAAAO4M0bl13MsWbcNnl4osGJog042lZp8/iZiAAAAAAAAAAAAAAAAAAAAAAAAAacLPzXwMx3SlZpiD1sZR3oNrlvL77HjH0OBzi17Pwf2zw8TT3ZyjydvDgaq1UADKAAAlIgshkRJgcAkgAAAAAAAAAAAAAAAAD2NjVc11W4/l8vMo25StUT9qPvWX0Kdn1LS8pLuj0fxBC8YSXO3g1f5GvSvDABlAlIgujCy7gVtkEyRyAAAAAAAAAAAAAAAAAAAFmHlaUe9vM9raDvh+1vdKx4J7c5XoT7X+DNRXiAAyi3D096VuCzfY0VUW4Sluwu9ZZ+HD6+JnxMzXpVE2cEixlEAAAAAAAAAAAAAAAAAAAepSl+jL+p5ZupS/Sl2a95YMJbhqW9KMebz6JZv3FR6OzKdoym+PoLtq/l7xBdip2XJLhyR5U5XdzRjat3bzKKcbi1SMTvdLYQLFTGIy/lkShbXyNVRqKu829EY5Sbd2KOQAQAAAAAAAAAAAAAA0p/pPv8zMWyfoJdWyjiEW2ks23ZLqz1K8lCKitIq3fr4u5n2dTteb4ejHu9X4L4lWKqb0rL7ZZ4iqEm33NlKiW4TC+fE9KlhehZBihROcTNQWecn6sfm+htx1WNGK3rOpJXhT6e1Lp04nz9Wo5Nyk7t5ti3BE5tu7d2zkAwgASBAJIAAAAAAAAAAAAWqDk4xWtv9zKjXTe6m+LVu0f9LBZiKqilGPBWX1LMBg+L1+BxhaDb3peC5H0Oz8Mak1YnB4LodbXxkMNHdspV5JONN5qCaylU+UeOrytfRtna0cJHchaWKayi0nGgn+6a4z5R8Xyfw1Wo5NylJylJuUpSbblJu7bb1ZrrrPEW1NarKcnKcnKUndybu2ysA5MhMVc6pUnJ2Xdvgl1NLppLLTnxbLgzNHLO6kisgAAAAAAAAAAAASkBMEa6NO7u/I4o0vP4G2hA1IsbMJS0NWP2ysOnClZ4jRy1VH6z+HfTycTtLcW7SfpaOov2/069fLmeQW9Z8Gupybbbbbbbbbu23q2zkAwgaMJhZVHZZRWcpPSK+vQ0bL2ZKreT9GlF2lO2r9mK4y+HE9irCMIpJbsFnGF9f5Sfz49jU51ZGF0oxjZK0ffJ82ebia13ZffY7xuL3m0nlz59uhkFv0AAMoAAAAAAAAAEgEi6lA5hEsdRLvyKL45ZvJc2U18W2t2OUdG+Mv8KKlRvXyOBoAHVOm5NRjFylJqMYxTbbbsklxZByfQbE/Dzmo1a940XnCCynW7ezH+XHhxa37G/D8abUq8Y1ausaN1KnT61HpJ/wAfVXG+aXpbV2xCim3PeqS/cvW/8cv7eXXpzx7rUn2r2hUhSjmox3FaNNK0Ka5W59Oeudz4/aGOdRuze7fjrLqzjH46VV3lklpFaL6syk661LQAGEAAABIAgAAAABJKIIA7c+RwAAB1GLbsk23okrtnp4TZyWdT0nwpxf8A1JfBeaLJozYDZ06r9G0YL1qk7qEfHi+iuz6bAUadGLVK6bVp15JfmTXFRX7I9F4sw18bGCW81l6tONlFdkvvqeRjNozqZX3Y8lxXX6G/HP618PY2jt5RThSzfGXD/fgfO1aspNyk3JvVs4Bi9WpaAAiAAAAAAAAAAAAAAASBBbTo31yXvOYux1+c+GRRupOMF7K4833ZVWx70hl1MTk3qyBq6mUm827vmQARAAAACUgIJOt05bAEAAAAAAAAAAAAAAAAAAAAABbRoSlovHgX7kIavelyX3kXBTToNkylFZLN+7z4kVcQ5dFyXz5lIEylfUgAgAAAAAAAAAAAAAAAAAlIlNcr9wJp03LRF0VTj6z35cl6vmUSqN8cuWiOSjRVxcnkvRjyjkZwCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//9k=" alt="hình ảnh" class="card-img-top" style="height: 400px; ;" >
+                    <div class="card-body">
+                        <h5 class="card-title"> Card title </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-3">
+                <div class="card">
+                    <img src="data:image/jpeg;base64,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" alt="hình ảnh" class="card-img-top" style="height: 400px; ;" >
+                    <div class="card-body">
+                        <h5 class="card-title"> Card title </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-3">
+                <div class="card">
+                    <img src="data:image/jpeg;base64,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" alt="hình ảnh" class="card-img-top img-thumbnail" style="height: 400px; ;" >
+                    <div class="card-body">
+                        <h5 class="card-title"> Card title </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 10px;">
+            <div class="carousel-inner slide-image " >
+                <div class="carousel-item active">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz3bRevaK8obTPoluf6_1mJj7nQmGnaqbAfg&usqp=CAU" alt="" class="d-block w-100" >
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST-nTV5kl0fcuJEmasZWI7qFx9xJDJL1eCvg&usqp=CAU" alt="" class="d-block w-100" >
+                </div>
+            </div>
+        </div>        
+    </div>
+    
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-inner slide-image"  >
+          <div class="carousel-item active "  >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS1Oefx7SrJRMwEXGKLeb6Rvbgooa3GqSEGQ&usqp=CAU" class="d-block w-100" alt="slide 1" style="background-position:top center;">
+          </div>
+          <div class="carousel-item">
+            <img src="https://img.lovepik.com/photo/50083/4989.jpg_wh860.jpg" class="d-block w-100" alt="slide 2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.ytimg.com/vi/scjBxT0C6ag/hqdefault.jpg" class="d-block w-100" alt="slide 3">
+          </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <button type="button" class="btn btn-outline-success" data-bs-toggle="collapse" data-bs-target="#data-content">nhấn vào</button>
+        <a href="#data-content" class="btn btn-outline-secondary" role="button" data-bs-toggle="collapse" >bấm vào</a>
+        <div class="colapse" id="data-content">
+            <p class="card card-body">Trong bài này, mình sẽ hướng dẫn các bạn về dropdowns - tạo menu thu gọn trong trong Bootstrap. Dropdowns được ứng dụng khá nhiều trong việc tạo ra những nút menu thu gọn.
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="container  ">
+        <div class="row"  >
+            <div class="col col-md-4 " >
+                <div class="card">
+                    <img style="height: 270px;" class="w-100 card-img-topư" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9kTu1iqN53v11PxknscCFTEcYHwQI4EAF8peGIs_MRDBmYVP6c6-prEcucWnGSRjiXDE&usqp=CAU" alt="Hình 1">
+                    <div class=" card-body ">
+                        <h6 class="card-title">Hình ảnh bông hoa</h6>
+                        <p class="card-text">Hồng hay hường là tên gọi chung cho các loài thực vật có hoa dạng cây bụi hoặc cây leo lâu năm thuộc chi Rosa
+                            <button style="border: none; margin-left: -5px;" class="btn btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#exampleCollapse">...</button>
+                        </p>
+                        <div class="collapse" id="exampleCollapse">
+                            <p >
+                                 Họ Rosaceae, với hơn 100 loài với màu hoa đa dạng, phân bố từ miền ôn đới đến nhiệt đới. Các loài này nổi tiếng vì hoa đẹp nên thường gọi là hoa hồng
+
+                            </p>
+                        </div>
+                            
+                        
+                        <a href="" class="btn  btn-outline-info" >đặt hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 " >
+                <div class="card">
+                    <img style="height: 270px;" class="w-100 card-img-topư" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9kTu1iqN53v11PxknscCFTEcYHwQI4EAF8peGIs_MRDBmYVP6c6-prEcucWnGSRjiXDE&usqp=CAU" alt="Hình 1">
+                    <div class=" card-body ">
+                        <h6 class="card-title">Hình ảnh bông hoa<span class="badge bg-warning">New</span> </h6>
+                        <p class="card-text ">Hồng hay hường là tên gọi chung cho các loài thực vật có hoa dạng cây bụi hoặc cây leo lâu năm thuộc chi Rosa, họ Rosaceae, với hơn 100 loài với màu hoa đa dạng, phân bố từ miền ôn đới đến nhiệt đới. Các loài này nổi tiếng vì hoa đẹp nên thường gọi là hoa hồng </p>
+                        <div class="row justify-content-sm-between">
+                            <div class="col col-sm-6 ">
+                                <a href="" class="btn  btn-outline-info" >đặt hàng </a>
+                            </div>
+                            <div class="col col-sm-6 ">
+                                <p class="btn btn-outline-dark" style="border:none"><i class="watch"></i> 1000d/1bong</p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 " >
+                <div class="card">
+                    <img style="height: 270px;" class="w-100 card-img-topư" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9kTu1iqN53v11PxknscCFTEcYHwQI4EAF8peGIs_MRDBmYVP6c6-prEcucWnGSRjiXDE&usqp=CAU" alt="Hình 1">
+                    <div class=" card-body ">
+                        <h6 class="card-title">Hình ảnh bông hoa</h6>
+                        <p class="card-text">Hồng hay hường là tên gọi chung cho các loài thực vật có hoa dạng cây bụi hoặc cây leo lâu năm thuộc chi Rosa, họ Rosaceae, với hơn 100 loài với màu hoa đa dạng, phân bố từ miền ôn đới đến nhiệt đới. Các loài này nổi tiếng vì hoa đẹp nên thường gọi là hoa hồng</p>
+                        <a href="" class="btn  btn-outline-info" >đặt hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="">
+        <p class=" ">Hồng hay hường là tên gọi chung cho các loài thực vật có hoa dạng cây bụi hoặc cây leo lâu năm thuộc chi Rosa
+            <a href="#exampleCollapse" class="btn btn-outline-info" role="button" data-bs-toggle="collapse"  >...</a>
+            <button style="border: none; margin-left: -5px;" class="btn btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#exampleCollapse">...</button>
+        </p>
+        <div class="collapse" id="exampleCollapse">
+            <div class="card cardbody">
+                 họ Rosaceae, với hơn 100 loài với màu hoa đa dạng, phân bố từ miền ôn đới đến nhiệt đới. Các loài này nổi tiếng vì hoa đẹp nên thường gọi là hoa hồng
+
+            </div>
+        </div>
+    </div>
+    
+        
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Button with data-bs-target
+        </button>
+ 
+        <div class="collapse collapse-horizontal" id="collapseExample">
+            <div class="card card-body" style="min-height:100px; width: 500px;">
+                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid">
+            <div class="row">                    
+                <div id="exampleCarousel" class="carousel slide" data-bs-ride="carousel" style="height: 400px;">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#exampleCarousel" class="active" data-bs-slide-to=0 ></button>
+                        <button type="button" data-bs-target="#exampleCarousel"  data-bs-slide-to=1 ></button>
+                        <button type="button" data-bs-target="#exampleCarousel"  data-bs-slide-to=2 ></button>                        
+                    </div>                      
+                    <div class="carousel-inner w-100 h-100"  >
+                        <div class="carousel-item active">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAk1BMVEUAAAD///8SEhIVFRUODg4dHR0kJCQqKionJycICAgZGRktLS0EBAQgICAwMDAHBwc0NDT29vaysrKDg4O7u7vIyMhcXFyjo6OqqqpxcXHR0dDl5eXCwsJ7fHz7+v2MjIxNTU3t7e1DQ0NjY2OVmZru6u//+f+1t7VubW6tra3X2NPV1NXg3+GRjJGho6CGhoVGRkbbGUfNAAAE5ElEQVR4nO3Yi3aiOhQGYAIBAUFEBOqtgtKxHZ227/90JzugFRBLZ0orPf+3VqmQkEU2OwmgKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATSKWlfcf7lqfGyeffDG35omx+dluxn4t2p4asV0HF3RLpoyxhSV/OoryzNiv+7anzkth/YlCERyWFjsx7bCWZ+rs/xEcdniMn+LVHftIcOIPBGc2/svL+15TVuW3PNNvHxyDTf/2+r7VXS04VyZkL8qepsvpJI7Xq8n1qiXzsG063pagFpzGdIjC+2rd4XvNG7SgRUwJ2z8g3JBZLTi/L1cc7EXZfSU8h2tNcxGYEaVMulZcpndw8V1b0CzzcBpStJmdCsPo9PPPL+bX4njPJpdbTba0ZaaYmbbPB5bYSrzsth9dSPKZY553NlFexDY8le63xQ9rz6pDyjfHU3HwkYrdlyAIXty3ZoM9bcNgtWd+uF5ND0xE6Iu69Em4o2xFN5f0YFysUxsZLK6JUjXO0mks02hcTxpGi/N4zx6ofDidTCY7OQFp+dsILXmzPduvg2LS3kTa13fwXyyZ71O3H6M073A8lo89vpxLKDgTGZyxOJa+JqUIveZNPMo1ejTd7XZTGZzD+kDpFuwyf7/yxbg6xN/Uu3+0r+fDccwUFfI5h0L3oijrswqbUkNusFqtAhpWoRhmYaZslnJwzqidtGcp8yZJ65FZO8fSZULbmOabrLTqbxqau8uSNFOWh8OMLyiBstZvsTfH/PP7Yt4snktP+wd5MBqnx0k5rb4MeDrxlGCibH0RRvmudliKcZalSk89io6GeT68rUXhTswtz3kFg9N2fiqTjzl+1tRedFzYAznPrNKk08vvljMPLLGOLI7Buc+Hj1hmitTIgxOJgJyCt1g3t7dfJfkPt7+jqWZ2zI307uxZRVG5raoUnu2iKA7Xg6sNva6flrtwEr/0djBdtNnOZttR+Zhlccvy5E/9NXlt/dVBi1bR+7V6xLMEp3r07YDnebXSRiKon3NVt0Afjgv5JFNlj/LS0cC9WH6i6q5hGK6uvfu2fvucgS5uMR+OzohJx7EHpTuvjc/Kh7rX2J6pFud5ZqfX/SU00VdTH5aZhghW6fuCWSofDd2m9vixRLNpa5v8fGT2jKMZg0sMrZQdeSXumUXxcNA0uFRd4aYIjEGNGxQh2+i8Fx1xHI8bZo1WmXztAR0U+XCq0RgdTbN0VdF1V3VcGmJaHz9x5VzTNC4yy/ebZlkKzlmNxuiIApuLnHRtEWAuYuP0ND6aK+6xYHnynyvut03/dLfcIY8Ocu6eK6LD7WqbXKOU4SrXNE4B0q4vcLeMixdGjSYLKX+FrPaX7n4dhcCy9Vpe5AsWfabwVE3llpof9upPUTfPs22bRowtWSITbFu9UK+ocM6yNHnKJZZMF+55XBBP2oLav+AoqlZzsb9WvR5pGDOOjAQVWo5ncYfeRTrrQncstappjuC1ms11cxQheiigxa+PsVFkypc1VXXqdd9v38k3Tg8HFaV7zZXajkdvqPQW6rxX9SfwPhScypnNr1k/gyOSQPyJvKf/cqftmc4HvmL0kwyKc2mnzakdXRQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABc8h/WH0KSeRbVxwAAAABJRU5ErkJggg==" alt="slide 1" class="d-block w-100">
+                            <div class="carousel-caption" style="bottom:50px;">
+                                <p> đây là hình ảnh </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="data:image/png;base64,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" alt="slide 1" class="d-block w-100">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTHiU_CzSU55D4_cfjopMNWneFLAotLPlXYw&usqp=CAU" alt="slide 1" class="d-block w-100">
+
+                        </div>  
+                        <button class="carousel-control-prev" type="button" data-bs-target="#exampleCarousel" data-bs-slide="prev" >
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#exampleCarousel" data-bs-slide="next" >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>                      
+                    </div>
+                </div>  
+                
+
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm-6 dropdown">
+                    <button type="button" class="btn btn-outline-dark dropdown-toggle  " data-bs-toggle="dropdown" style="background-color: #ccc;">More</button>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">Item 1</a>
+                        <a href="" class="dropdown-item">Item 2</a>
+                        <a href="" class="dropdown-item">Item 3</a>
+                        <div class="dropdown-divider">Toggle Dropdown</div>
+                        <a href="" class="dropdown-item">Item 4</a>
+                    </div>  
+
+                </div>
+                <div class="col col-sm-6 ">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success"  >More</button>
+                        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+                            <span class="visually-hidden"></span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="" class="dropdown-item">Item 1</a>
+                            <a href="" class="dropdown-item">Item 2</a>
+                            <a href="" class="dropdown-item">Item 3</a>
+                            <div class="dropdown-divider">Toggle Dropdown</div>
+                            <a href="" class="dropdown-item">Item 4</a>
+                        </div>  
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    <hr>
+    <div class="container">
+        <form action="">
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                  <label for="inputPassword6" class="col-form-label">Password</label>
+                </div>
+                <div class="col-auto">
+                  <input type="password"  required id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+                <div class="col-auto">
+                  <span id="passwordHelpInline" class="form-text">
+                    Must be 8-20 characters long.
+                  </span>
+                </div>               
+
+            </div>
+            <div class="col-1 ">
+                <button class="btn btn-primary  " type="submit" disabled >OK</button>
+            </div>
+            
+        </form>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-lg-6">
+
+            </div>
+            <div class="col col-lg-6">
+                <div class="container w-75" >        
+                    <form >
+                        <h2> Đăng kí thông tin</h2>
+                        <p>Luôn miễn phí</p>
+                        <div class="form-group row my-2" >
+                            <div class="col">
+                                <input type="text" class="form-control" required placeholder="Họ của bạn">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" required placeholder="Tên của bạn">
+                            </div>
+                        </div>
+                        <div class="form-group my-2">
+                            <input type="text" class="form-control" required placeholder="Số điện thoại hoặc email">
+                        </div>
+                        <div class="form-group my-2">
+
+                            <input type="text" class="form-control" required placeholder="Mật khẩu mới">
+                        </div>
+                        <div class="form-group my-2">
+                            <label >Ngày sinh</label>
+                            <div class="my-2">
+                                <div class="form-check-inline">
+                                    <select>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </div>
+                                <div class="form-check-inline">
+                                    <select>
+                                        <option value="">Tháng 1</option>
+                                        <option value="">Tháng 2</option>
+                                        <option value="">Tháng 3</option>
+                                    </select>
+                                </div>
+                                <div class="form-check-inline">
+                                    <select>
+                                        <option value="">Năm 1991</option>
+                                        <option value="">Năm 1992</option>
+                                        <option value="">Năm 1994</option>
+                                    </select>
+                                </div>
+                                <div class=" form-text form-check-inline">Tại sao tôi cần cung cấp ngày sinh của mình?</div>                        
+                            </div>
+                        </div>
+                        <div class="form-group "  >
+                            <label >Giới tính </label>
+                            <div class="row" data-bs-toggle="buttons">
+                                <div class="col col-sm-3  " >                                    
+                                    <label class="btn btn-outline-info" >Nữ
+                                        <input type="radio" class=" " name="Giới tính" checked value="Nữ">
+                                    </label>
+                                </div>
+                                <div class="col col-sm-3 ">
+                                    <label class="btn btn-outline-info" >Nam
+                                        <input type="radio" class=" " name="Giới tính" value="Nam" >
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" class="form-check-input">
+                            <div class="form-text form-check-inline">
+                                Tôi đồng ý với điêu khoản trên
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success" >Tạo tài khoản</button>
+                        </div>
+                    </form>        
+            </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">   
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Click vào đây</button>        
+        <div class="modal  fade " id="exampleModal"  data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog " >                
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cảnh báo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" ><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Bạn có muốn tắt cảnh báo này không
+                        <a role="button" class="btn btn-danger popover-test" title="ahihi" data-bs-content="đây là nội dung" >click vào</a> -->
+                        <div class="modal-body " >
+                            <h5>Popover in a modal</h5>
+                            <p>This 
+                                <button href="" role="button" class="btn btn-secondary " data-bs-placement="bottom" data-bs-toggle="popover" data-bs-trigger="hover focus" title="Popover title" data-bs-content="Popover body content is set in this attribute.">button</button> 
+                                triggers a popover on click.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger">Ok</button>
+                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>    
+                    
+        </div>          
+        
+    </div>
+    
+    <hr>
+
+    <div class="container">
+       
+            <nav class="nav text-uppercase nav-tabs">
+                <a href="#home" data-bs-toggle="tab" class="nav-link" active>Home</a>
+                <a href="#tour" data-bs-toggle="tab" class="nav-link">Tour</a>
+                <a href="#band" data-bs-toggle="tab" class="nav-link">Band</a>
+                <a href="#more" data-bs-toggle="tab" class="nav-link">More</a>
+
+                
+            </nav>
+            <div class="tab-content" >
+                <div class="tab-pane fade show active" id="home">
+                    <p> đây là nội dung 1</p>
+                </div>
+                <div class="tab-pane fade " id="tour">
+                    <p> đây là nội dung 2</p>
+                </div>
+                <div class="tab-pane fade " id="band">
+                    <p> đây là nội dung 3</p>
+                </div>
+                <div class="tab-pane fade  " id="More">
+                    <<p> đây là nội dung 4</p>
+                </div>
+            </div>        
+    </div>
+    <hr>
+    <div class="comtainer">
+        <nav class="nav nav-pills " style="height: 46px; background-color: #000;">
+            <a href="" class="nav-link text-uppercase ">Home</a>
+            <a href="" class="nav-link text-uppercase">Band</a>
+            <a href="" class="nav-link text-uppercase">Tour</a>
+            <a href="#dropdownmenu" class="nav-link text-uppercase  dropdown-toggle " role="button" data-bs-toggle="dropdown" >More
+            </a>
+            
+            <div class="dropdown-menu" >
+                <a href="" class="dropdown-item">Item 1</a>
+                <a href="" class="dropdown-item">Item 2</a>
+                <a href="" class="dropdown-item">Item 3</a>
+                <a href="" class="dropdown-item">Item 4</a>
+
+            </div>
+            <a href="#dropdownmenu1" class="nav-link text-uppercase  dropdown-toggle " role="button" data-bs-toggle="dropdown" >More
+            </a>
+            <div class="dropdown-menu dropdown-menu-dark" >
+                <a href="" class="dropdown-item">Item 6</a>
+                <a href="" class="dropdown-item">Item 7</a>
+                <a href="" class="dropdown-item">Item 8</a>
+                <a href="#dropdownmenu2" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" role="button" >Item 9</a>
+                <div class="dropdown-menu" >
+                    <a href="" class="dropdown-item">Item 10</a>
+                    <a href="" class="dropdown-item">Item 20</a>
+                    <a href="" class="dropdown-item">Item 30</a>
+                    <a href="" class="dropdown-item">Item 40</a>
+    
+                </div>
+            </div>
+        </nav>
+        <hr>
+        <nav class="nav  nav-pills nav-tabs">
+            <a href="#Trangchủ" data-bs-toggle="tab" class="nav-link" active>Trang chủ</a>
+            <a href="#chitiet" data-bs-toggle="tab" class="nav-link">Much longer nav link</a>
+            <a href="#Nhóm" data-bs-toggle="tab" class="nav-link">Nhóm</a>
+            <a href="" class="nav-link text-uppercase  dropdown-toggle " role="button" data-bs-toggle="dropdown" >More
+            </a>
+            
+            <div class="dropdown-menu" >
+                <a href="" class="dropdown-item">Item 1</a>
+                <a href="" class="dropdown-item">Item 2</a>
+                <a href="" class="dropdown-item">Item 3</a>
+                <a href="" class="dropdown-item">Item 4</a>
+
+            </div>
+            
+            
+        </nav>
+        <div class="tab-content">
+            <div class="tab-content" >
+                <div class="tab-pane fade show active" id="Trangchủ">
+                    <p> đây là nội dung 1</p>
+                </div>
+                <div class="tab-pane fade " id="chitiet">
+                    <p> đây là nội dung 2</p>
+                </div>
+                <div class="tab-pane fade " id="Nhóm">
+                    <p> đây là nội dung 3</p>
+                </div>
+                <div class="tab-pane fade  " id="More">
+                    <<p> đây là nội dung 4</p>
+                </div>
+            </div> 
+        </div>
+        
+    </div>
+    <hr>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                    
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <a href="" class="navbar-brand"><img src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"></a>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li >
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>                 
+                
+            </div>
+        </nav>
+    </div>
+    <hr>
+    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3 fixed-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1">First</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">Second</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <div id="scrollspyHeading1">
+            <h4 >First heading</h4>
+            <p>...</p>
+        </div>
+        
+        <div id="scrollspyHeading2">
+            <h4 >Second heading</h4>
+            <p>...</p>
+        </div>
+        <div id="scrollspyHeading3">
+            <h4 >Third heading</h4>
+            <p>...</p>
+        </div>
+        
+        <div id="scrollspyHeading4">
+            <h4 >Fourth heading</h4>
+            <p>...</p>
+        </div>
+        <div id="scrollspyHeading5">
+            <h4 >Fifth heading</h4>
+            <p>...</p>
+        </div>
+        
+    </div>
+    
+
+    <!-- optional Jquery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/assets/Popover/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+        var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+            trigger: 'focus'
+        })
+    </script>
+</body>
+</html>

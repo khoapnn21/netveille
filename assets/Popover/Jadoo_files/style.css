@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 1rem;
+    font-family: 'Volkhov', serif;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.main {
+    background: url(/assets/img/bg-desktop/desktop.png) top center /cover no-repeat;
+    margin-top: 0;
+    z-index: -1;
+}
+
+
+.nav-header {
+    margin-top: 47px;
+    height: 40px ;
+}
+.img-brand {
+    height: 2.500em;
+
+}
+
+.header-content-img {
+    position: relative;
+}
+
+.img-plan {
+    position: absolute;
+    top: 25px;
+    left: 100px;
+}
+.img-plan2 {
+    position: absolute;
+    top: 72px;
+    right: -21px;
+    z-index: -1;
+}
+
+.play-demo {
+    background-color: #DF6951;
+}
